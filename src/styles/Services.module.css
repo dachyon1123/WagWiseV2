@@ -1,0 +1,30 @@
+.container {
+    margin-bottom: 150px;
+    padding: 10px;
+    background-image: linear-gradient(white, rgb(82, 82, 194));
+    align-items: center;
+    gap: 0;
+}
+
+.images {
+    height: auto;
+    width: 90%;
+    margin-top: 20px;
+    transition: transform 1s ease-in-out; /* Apply the transition to transform only */
+  
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  
+
+
+.title {
+    color: white;
+    margin-top: 10px;
+}
+
+.text {
+    color: white;
+}
+

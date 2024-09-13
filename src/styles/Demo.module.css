@@ -1,0 +1,7 @@
+.drawerHover {
+  background-color: white;
+  margin: 10px 10px 10px 0;
+  &:hover {
+    background-color: rgb(201, 201, 201);
+  }
+}

@@ -1,6 +1,5 @@
-import { Flex, Title, Drawer, Button, Stack, Image, useMantineTheme } from "@mantine/core"
+import { Flex, Title, Drawer, Button, Stack, Image} from "@mantine/core"
 import { useDisclosure } from '@mantine/hooks';
-import { Link } from "react-router-dom";
 import drawerIcon from '../../assets/headerAssets/drawer.svg'
 
 

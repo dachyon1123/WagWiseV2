@@ -9,7 +9,7 @@ interface InfoBlockInterface {
     buttonText: string,
 }
 
-export default function InfoBlocks({ id, title, text, buttonText }: InfoBlockInterface) {
+export default function InfoBlocks({ title, text, buttonText }: InfoBlockInterface) {
     return (
         <section>
             <Stack className={styles.container}>

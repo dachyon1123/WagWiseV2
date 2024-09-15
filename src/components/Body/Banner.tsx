@@ -3,14 +3,20 @@ import styles from '../../styles/Banner.module.css'
 
 import callIcon from '../../assets/bannerAssets/callIcon.svg'
 
-export default function Banner() {
+interface bannerContent {
+    title: string,
+    text: string,
+
+}
+
+export default function Banner({ title, text }: bannerContent) {
     return (
         <Stack className={styles.bannerContainer}>
             <Title order={3} className={styles.bannerTitle}>
-                Find out how WagWise Dog Training can help you and your dog or puppy today!
+                {title}
             </Title>
             <Text className={styles.bannerText}>
-                I offer comprehensive training for dogs and puppies. Whatever your goals are for you and your pup, I can help you meet them.
+                {text}
             </Text>
             {/* Add functionality to pull up phone call on iphone when clicking this */}
             <Button className={styles.contactButton}>

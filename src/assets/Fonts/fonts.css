@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./Open_Sans/static/OpenSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Tenor Sans';
+    src: url('./Tenor_Sans/TenorSans-Regular.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Open Sans Light';
+    src: url('./Open_Sans/static/OpenSans-Medium.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  

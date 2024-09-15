@@ -1,4 +1,7 @@
 import { Group, Title } from "@mantine/core"
+import { Link } from "react-router-dom"
+
+import styles from '../../styles/Header.module.css'
 
 import Logo from "./Logo"
 import Navbar from "./NavBar"
@@ -9,7 +12,9 @@ export default function Header() {
             justify="space-between"
         >
             <Logo />
-            <Title>WagWise</Title>
+            <Link to='/' className={styles.title}>
+                <Title>WagWise</Title>
+            </Link>
             <Navbar />
         </Group>
     )

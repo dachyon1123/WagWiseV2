@@ -1,0 +1,24 @@
+.container {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftContainer {
+    align-items: center;
+}
+
+.rightContainer {
+    align-items: center;
+    gap: 6px;
+    margin-right: 20px;
+}
+
+.image {
+    height: 32px;
+    width: 32px;
+    margin: 20px 10px 20px 20px;
+}
+
+.text {
+    font-size: 14px;
+}

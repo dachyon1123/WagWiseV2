@@ -10,7 +10,7 @@
     height: auto;
     width: 90%;
     margin-top: 20px;
-    transition: transform 1s ease-in-out; /* Apply the transition to transform only */
+    transition: transform .5s ease-in-out; /* Apply the transition to transform only */
   
     &:hover {
       transform: scale(1.1);
@@ -26,5 +26,13 @@
 
 .text {
     color: white;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-decoration: none;
 }
 

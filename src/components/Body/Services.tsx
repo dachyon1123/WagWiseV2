@@ -1,4 +1,5 @@
 import { Stack, Image, Text, Title } from "@mantine/core"
+import { Link } from "react-router-dom"
 
 import styles from '../../styles/Services.module.css'
 
@@ -6,13 +7,15 @@ export default function Services() {
     return (
         <section>
             <Stack className={styles.container}>
-                <Image className={styles.images} src='https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-1.png' />
-                <Title className={styles.title} order={4}>
-                    Board and Train
-                </Title>
-                <Text className={styles.text}>
-                    Complete Obedience Training
-                </Text>
+                <Link to='/board-&-train' className={styles.links}>
+                    <Image className={styles.images} src='https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-1.png' />
+                    <Title className={styles.title} order={4}>
+                        Board and Train
+                    </Title>
+                    <Text className={styles.text}>
+                        Complete Obedience Training
+                    </Text>
+                </Link>
 
                 <Image className={styles.images} src='https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-1.png' />
                 <Title className={styles.title} order={4}>

@@ -8,6 +8,7 @@ import './assets/Fonts/fonts.css'
 
 import Homepage from './pages/HomePage';
 import BoardAndTrain from './pages/BoardAndTrain';
+import DogTraining from './pages/DogTraining';
 
 
 const theme = createTheme({
@@ -36,6 +37,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Homepage />} />
           <Route path='/board-&-train' element={<BoardAndTrain />} />
+          <Route path='/training' element={<DogTraining />} />
         </Routes>
       </MantineProvider>
     </BrowserRouter>

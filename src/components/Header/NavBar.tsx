@@ -1,5 +1,6 @@
 import { Flex, Title, Drawer, Button, Stack, Image} from "@mantine/core"
 import { useDisclosure } from '@mantine/hooks';
+import { Link } from "react-router-dom";
 import drawerIcon from '../../assets/headerAssets/drawer.svg'
 
 
@@ -16,11 +17,25 @@ export default function Navbar() {
         >
             <Drawer opened={opened} onClose={close} position="right" size="65%">
                 <Stack gap='xl'>
-                    <Title order={4} ta='right'>Home</Title>
-                    <Title order={4} ta='right'>Dog Training</Title>
-                    <Title order={4} ta='right'>Dog Boarding</Title>
-                    <Title order={4} ta='right'>FAQ</Title>
-                    <Title order={4} ta='right'>Contact</Title>
+                    <Link to='/' style={{textDecoration: 'none', color: 'black'}}>
+                        <Title order={4} ta='right'>Home</Title>
+                    </Link>
+
+                    <Link to='/training' style={{textDecoration: 'none', color: 'black'}}>
+                        <Title order={4} ta='right'>Dog Training</Title>
+                    </Link>
+
+                    <Link to='/board-&-train' style={{textDecoration: 'none', color: 'black'}}>
+                        <Title order={4} ta='right'>Dog Boarding</Title>
+                    </Link>
+
+                    <Link to='/FAQ' style={{textDecoration: 'none', color: 'black'}}>
+                        <Title order={4} ta='right'>FAQ</Title>
+                    </Link>
+                    
+                    <Link to='/contact-me' style={{textDecoration: 'none', color: 'black'}}>
+                        <Title order={4} ta='right'>Contact</Title>
+                    </Link>
                 </Stack>
             </Drawer>
 

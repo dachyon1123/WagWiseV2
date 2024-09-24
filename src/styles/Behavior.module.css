@@ -1,6 +1,7 @@
 .container {
     background-color: rgb(82, 82, 194);
     margin: 30px;
+    padding: 30px;
     min-height: 300px;
     align-items: center;
     justify-content: center;

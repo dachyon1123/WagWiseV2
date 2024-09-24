@@ -7,13 +7,15 @@
 }
 
 .images {
-    height: auto;
-    width: 90%;
+    max-height: 300px;
+    max-width: 300px;
+    min-height: 300px;
     margin-top: 20px;
+    border-radius: 30px;
     transition: transform .5s ease-in-out; /* Apply the transition to transform only */
   
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
   }
   

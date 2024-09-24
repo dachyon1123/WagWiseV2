@@ -1,15 +1,17 @@
 import Header from "../components/Header/Header"
-import Banner from "../components/Body/Banner"
+import Banner from "../components/Homepage/Banner"
 import BlockOne from "../components/Blocks/BlockOne"
 import BlockTwo from "../components/Blocks/BlockTwo"
-import TitleComponent from "../components/Body/CustomerReviews/TitleComponent"
+import TitleComponent from "../components/Homepage/CustomerReviews/TitleComponent"
 import StopBehaviors from "../components/BoardAndTrain/StopBehaviors"
 import Footer from "../components/Footer/Footer"
 
+import bannerImage from '../assets/pictures/boardAndTraing.webp'
 
 const boardAndTrainInfo = {
     title: 'Board and Train Obedience Training Program',
-    text: 'I use positive reinforcement dog training methods to help your dog be the best he can be. With gentle and proven training techniques, I can stop and prevent behavior problems in your dog for good.'
+    text: 'I use positive reinforcement dog training methods to help your dog be the best he can be. With gentle and proven training techniques, I can stop and prevent behavior problems in your dog for good.',
+    buttonText: 'View Rates'
 }
 
 const blockOne = {
@@ -46,7 +48,7 @@ export default function BoardAndTrain() {
     return (
         <>
             <Header />
-            <Banner title={boardAndTrainInfo.title} text={boardAndTrainInfo.text} />
+            <Banner title={boardAndTrainInfo.title} text={boardAndTrainInfo.text} image={bannerImage} buttonText={boardAndTrainInfo.buttonText}/>
             <BlockOne title={blockOne.title} text={blockOne.text} />
             <BlockTwo title={whatWillItDoObj.title} text={whatWillItDoObj.text} listItems={whatWillItDoListItems} />
             <TitleComponent title="Stop and Prevent Your Dog's Nussiance Behaviors" />

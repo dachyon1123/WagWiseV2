@@ -1,13 +1,21 @@
+import { Title, Button, Text } from "@mantine/core"
+
 import Header from "../components/Header/Header"
-import Banner from "../components/Body/Banner"
+import Banner from "../components/Homepage/Banner"
 import BlockOne from "../components/Blocks/BlockOne"
-import InfoBlocks from "../components/Body/InfoBlocks"
+import HowItWorks from "../components/DogTraining/HowItWorks"
 import Footer from "../components/Footer/Footer"
 
+import styles from '../styles/Banner.module.css'
 
-const boardAndTrainInfo = {
+import bannerPicture from '../assets/pictures/dogTraining.webp'
+
+
+
+const privateTraining = {
     title: 'Private Dog Training',
-    text: 'Get personalized help with your dog from a certified dog trainer.'
+    text: 'Get personalized help with your dog from a certified dog trainer.',
+    buttonText: 'View Rates'
 }
 
 const blockOneInfo = {
@@ -48,8 +56,21 @@ export default function DogTraining() {
     return (
         <>
             <Header />
-            <Banner title={boardAndTrainInfo.title} text={boardAndTrainInfo.text} />
+            <Banner title={privateTraining.title} text={privateTraining.text} image={bannerPicture} buttonText={privateTraining.buttonText} />
             <BlockOne title={blockOneInfo.title} text={blockOneInfo.text} />
+
+            <Title ta='center' order={2} mt={50}>
+                Getting Started
+            </Title>
+
+            {howItWorks.map((item) => {
+                return <HowItWorks title={item.title} text={item.text} />
+            })}
+
+            <Button className={styles.contactButton} display='block' mx='auto' mt={60} mb={20}>
+                <Text size="md" pl={10}>Contact Me</Text>
+            </Button>
+
             <Footer />
         </>
     )

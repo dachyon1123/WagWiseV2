@@ -5,3 +5,10 @@
     background-color: rgb(201, 201, 201);
   }
 }
+
+.buttonHover {
+  background-color: rgb(240, 123, 123);
+  &:hover {
+    background-color: rgb(177, 99, 99);
+  }
+}

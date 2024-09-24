@@ -22,15 +22,23 @@ export default function Navbar() {
                     </Link>
 
                     <Link to='/training' style={{textDecoration: 'none', color: 'black'}}>
-                        <Title order={4} ta='right'>Dog Training</Title>
+                        <Title order={4} ta='right'>Private Training</Title>
                     </Link>
 
                     <Link to='/board-&-train' style={{textDecoration: 'none', color: 'black'}}>
-                        <Title order={4} ta='right'>Dog Boarding</Title>
+                        <Title order={4} ta='right'>Board and Train</Title>
+                    </Link>
+
+                    <Link to='/overnight-boarding' style={{textDecoration: 'none', color: 'black'}}>
+                        <Title order={4} ta='right'>Overnight Boarding</Title>
                     </Link>
 
                     <Link to='/FAQ' style={{textDecoration: 'none', color: 'black'}}>
                         <Title order={4} ta='right'>FAQ</Title>
+                    </Link>
+
+                    <Link to='/rates' style={{textDecoration: 'none', color: 'black'}}>
+                        <Title order={4} ta='right'>Rates</Title>
                     </Link>
                     
                     <Link to='/contact-me' style={{textDecoration: 'none', color: 'black'}}>

@@ -1,0 +1,28 @@
+.container {
+    margin-bottom: 8px;
+}
+
+.button {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    height: 50px;
+    width: 80%;
+    border-radius: 0;
+}
+
+.collapse {
+    width: 80%;
+    margin: auto;
+
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-radius: 0;
+}
+
+.collapseText {
+    padding: 10px 10px 10px 10px;
+    font-size: 14px;
+    text-align: center;
+}

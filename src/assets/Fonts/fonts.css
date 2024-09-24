@@ -18,4 +18,17 @@
     font-weight: 700;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: 'Open Sans Bold';
+    src: url('./Open_Sans/static/OpenSans-ExtraBold.ttf') format('truetype');
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Open Sans Semi-Bold';
+    src: url('./Open_Sans/static/OpenSans-SemiBold.ttf') format('truetype');
+    font-style: normal;
+  }
+  
   

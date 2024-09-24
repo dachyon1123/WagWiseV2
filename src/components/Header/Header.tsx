@@ -2,6 +2,7 @@ import { Group, Title } from "@mantine/core"
 import { Link } from "react-router-dom"
 
 import styles from '../../styles/Header.module.css'
+import '../../assets/Fonts/fonts.css'
 
 import Logo from "./Logo"
 import Navbar from "./NavBar"

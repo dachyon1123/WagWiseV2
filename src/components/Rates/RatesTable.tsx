@@ -1,5 +1,7 @@
 import { Table } from "@mantine/core"
 
+import styles from '../../styles/Rates.module.css'
+
 const rates = [
     { service: 'Private Training', price: 12.011,},
     { service: 'Board and Train', price: 14.007,},
@@ -16,14 +18,14 @@ export default function RatesTable() {
 
 
     return (
-        <Table p={40}>
+        <Table className={styles.container}>
             <Table.Thead>
-                <Table.Tr fz={20}>
-                    <Table.Th ta='center'>Services</Table.Th>
-                    <Table.Th ta='center'>Prices</Table.Th>
+                <Table.Tr className={styles.tableHeaderRow}>
+                    <Table.Th className={styles.tableHeader}>Services</Table.Th>
+                    <Table.Th className={styles.tableHeader}>Prices</Table.Th>
                 </Table.Tr>
             </Table.Thead>
-            <Table.Tbody style={{fontFamily: 'Open Sans Light, sans serif'}} ta='center'>{table}</Table.Tbody>
+            <Table.Tbody className={styles.tableBody} style={{fontFamily: 'Open Sans Light, sans serif'}}>{table}</Table.Tbody>
         </Table>
     )
 }

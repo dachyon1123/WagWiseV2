@@ -1,5 +1,8 @@
+import { Box } from '@mantine/core';
+
 import InfoBlockProps from '../assets/infoBockAssets/infoBlockObj'
 import customerReviewProps from '../assets/CustomerReviewAssets/customerReviewObj'
+import styles from '../styles/Homepage.module.css'
 
 import Header from '../components/Header/Header'
 import Banner from '../components/Homepage/Banner';
@@ -26,17 +29,22 @@ export default function Homepage() {
                 image={bannerImage}
                 buttonText='View Rates'
             />
-            <CarouselComponent />
-            <MyStory />
+            <Box className={styles.carouselStoryContainer}>
+                <CarouselComponent />
+                <MyStory />
+            </Box>
             <WhatIDo />
             <Services />
             {InfoBlockProps.map((e) => {
                 return <InfoBlocks id={e.id} title={e.title} text={e.text} buttonText={e.buttonText} />
             })}
+            <Box mt={100}></Box>
             <TitleComponent title='Customer Reviews' />
-            {customerReviewProps.map((e) => {
-                return <CustomerReviews key={e.id} reviewer={e.reviewer} reviewText={e.reviewText} />
-            })}
+            <Box className={styles.reviewsContainer}>
+                {customerReviewProps.map((e) => {
+                    return <CustomerReviews key={e.id} reviewer={e.reviewer} reviewText={e.reviewText} />
+                })}
+            </Box>
             <Footer />
         </>
     )

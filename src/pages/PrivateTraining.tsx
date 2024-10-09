@@ -6,7 +6,7 @@ import BlockOne from "../components/Blocks/BlockOne"
 import HowItWorks from "../components/DogTraining/HowItWorks"
 import Footer from "../components/Footer/Footer"
 
-import styles from '../styles/Banner.module.css'
+import styles from '../styles/PrivateTraining.module.css'
 
 import bannerPicture from '../assets/pictures/dogTraining.webp'
 
@@ -52,14 +52,14 @@ const howItWorks = [
 ];
 
 
-export default function DogTraining() {
+export default function PrivateTraining() {
     return (
         <>
             <Header />
             <Banner title={privateTraining.title} text={privateTraining.text} image={bannerPicture} buttonText={privateTraining.buttonText} />
             <BlockOne title={blockOneInfo.title} text={blockOneInfo.text} />
 
-            <Title ta='center' order={2} mt={50}>
+            <Title className={styles.title} order={2}>
                 Getting Started
             </Title>
 
@@ -68,7 +68,7 @@ export default function DogTraining() {
             })}
 
             <Button className={styles.contactButton} display='block' mx='auto' mt={60} mb={20}>
-                <Text size="md" pl={10}>Contact Me</Text>
+                <Text size="md" pl={10} className={styles.contactButtonText}>Contact Me</Text>
             </Button>
 
             <Footer />

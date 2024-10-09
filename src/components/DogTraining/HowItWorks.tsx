@@ -1,6 +1,6 @@
 import { Title, Text, Stack } from "@mantine/core"
 
-import styles from '../../styles/DogTraining.module.css'
+import styles from '../../styles/HowItWorks.module.css'
 
 interface dogTrainingInterface {
   title: string,
@@ -10,10 +10,10 @@ interface dogTrainingInterface {
 export default function HowItWorks({ title, text }: dogTrainingInterface) {
   return (
     <Stack className={styles.container}>
-      <Title order={4}>
+      <Title order={4} className={styles.title}>
         {title}
       </Title>
-      <Text>
+      <Text className={styles.text}>
         {text}
       </Text>
     </Stack>

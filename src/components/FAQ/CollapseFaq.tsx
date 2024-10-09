@@ -1,4 +1,4 @@
-import { Collapse, Text, Group, Button, Box, Image } from "@mantine/core"
+import { Collapse, Title, Text, Group, Button, Box, Image } from "@mantine/core"
 import { useDisclosure } from "@mantine/hooks";
 
 import arrow from '../../assets/FaqAssets/arrow.svg'
@@ -15,13 +15,13 @@ export default function CollapseFaq({ title, text }: faqInterface) {
     const [opened, { toggle }] = useDisclosure(false);
 
     return (
-        <Box maw={400} mx="auto" className={styles.container}>
+        <Box className={styles.container}>
             <Group justify="center"className={styles.buttonContainer}>
                 { opened 
                     ?
-                    <Button onClick={toggle} className={styles.button}><Image src={arrow} className={styles.arrow} />{title}</Button>
+                    <Button onClick={toggle} className={styles.button}><Image src={arrow} className={styles.arrow} /><Title order={3} className={styles.title}>{title}</Title></Button>
                     :
-                    <Button onClick={toggle} className={styles.button}><Image src={arrow} className={styles.arrow} />{title}</Button>
+                    <Button onClick={toggle} className={styles.button}><Image src={arrow} className={styles.arrow} /><Title order={3} className={styles.title}>{title}</Title></Button>
                 }
             </Group>
 

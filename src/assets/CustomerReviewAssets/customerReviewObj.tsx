@@ -14,11 +14,6 @@ const reviews = [
         reviewer: "Lyndall Smith",
         reviewText: "I have 2 massive chocolate labs that basically walk me. I used to have to divide my time in the morning by taking a walk myself then coming home and playing with my dogs because I couldn’t walk them. I had ONE session with Bradley and now I am actually able to walk them! Bradley was able to implement different training exercises and teach me how to properly communicate with them resulting with my dogs understanding what I am asking of them. I am super excited to continue working with my dogs and actually be able to take family walks!",
     },
-    {
-        id: 4,
-        reviewer: "Chio",
-        reviewText: "Bradley trained both my dogs! He is great and really knows his stuff. I call him the “dog whisperer”. He delivered obedience training, which is needed for a dog to qualify as a service dog. He came to my house and we also went to dog parks.",
-    }
 ];
 
 

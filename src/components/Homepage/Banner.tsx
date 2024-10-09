@@ -14,28 +14,37 @@ interface bannerContent {
 
 export default function Banner({ title, text, image, buttonText }: bannerContent) {
     return (
-        <Box className={styles.bannerContainer}>
-            <BackgroundImage src={image} className={styles.image}>
+        <BackgroundImage src={image} className={styles.image}>
+            <Box className={styles.bannerContainer}>
                 <Stack className={styles.innerContainer}>
-                    <Title order={3} className={styles.bannerTitle} style={{fontFamily: 'Open Sans Bold, sans serif'}}>
-                        {title}
-                    </Title>
-                    <Text className={styles.bannerText} style={{fontFamily: 'Open Sans, sans serif'}}>
+                    {title === "Rates" ?
+                        <Title order={1} className={styles.bannerTitleRates} style={{ fontFamily: 'Open Sans Bold, sans serif' }}>
+                            {title}
+                        </Title>
+                        :
+                        <Title order={1} className={styles.bannerTitle} style={{ fontFamily: 'Open Sans Bold, sans serif' }}>
+                            {title}
+                        </Title>
+                    }
+
+
+                    <Text className={styles.bannerText} style={{ fontFamily: 'Open Sans, sans serif' }}>
                         {text}
                     </Text>
                     {/* Add functionality to pull up phone call on iphone when clicking this */}
                     {buttonText
-                    ?
-                    <Button className={styles.contactButton}>
-                        <Text size="md" pl={10}>{buttonText}</Text>
-                    </Button>
-                    :
-                    <Stack h={100}>
-                        
-                    </Stack>
+                        ?
+                        <Button className={styles.contactButton}>
+                            <Text size="md" className={styles.contactButtonText}>{buttonText}</Text>
+                        </Button>
+                        :
+                        <Stack h={100}>
+
+                        </Stack>
                     }
                 </Stack>
-            </BackgroundImage>
-        </Box>
+            </Box>
+        </BackgroundImage>
+
     )
 }

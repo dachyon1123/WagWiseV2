@@ -1,22 +1,75 @@
 .bannerContainer {
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.22);
+
+
+    @media (min-width: 1280px) {
+        min-height: 400px;
+    }
 }
 
-.innerContainer {
+/* .innerContainer {
     background-color: rgba(0, 0, 0, 0.562);
-}
-
+} */
 
 .bannerTitle {
     text-align: center;
     padding: 30px 10px 5px 10px;
-    color: white;
+    color: white;   
+
+    @media (min-width: 768px) {
+        padding-left: 100px;
+        padding-right: 100px;
+        font-size: 40px;
+      }
+
+    @media (min-width: 1280px) {
+        width: 50%;
+        padding-top: 50px;
+        margin: auto;
+        font-size: 30px;
+    }
+}
+
+.bannerTitleRates {
+    text-align: center;
+    padding: 30px 10px 5px 10px;
+    color: white;   
+
+    @media (min-width: 768px) {
+        padding-left: 100px;
+        padding-right: 100px;
+        font-size: 40px;
+      }
+
+    @media (min-width: 1280px) {
+        width: 50%;
+        padding-top: 50px;
+        margin: auto;
+        font-size: 70px;
+    }
+
+    @media (min-width: 1900px) {
+        font-size: 100px;
+    }
 }
 
 .bannerText {
     text-align: center;
     padding: 0px 30px 10px 30px;
     color: white;
+
+    @media (min-width: 768px) {
+        padding-left: 100px;
+        padding-right: 100px;
+        font-size: 22px;
+    }
+    @media (min-width: 1280px) {
+        width: 75%;
+        padding-top: 50px;
+        margin: auto;
+        font-size: 20px;
+    }
 }
 
 .contactButton {
@@ -29,5 +82,25 @@
 
     &:hover {
         background-color: rgb(177, 99, 99);
+    }
+
+    @media (min-width: 768px) {
+        width: 30%;
+    }
+
+    @media (min-width: 1280px) {
+        width: 20%;
+    }
+
+    @media (min-width: 1900px) {
+        width: 10%;
+    }
+}
+
+.contactButtonText {
+    padding-left: 10px;
+    font-size: 18px;
+    @media (min-width: 768px) {
+        font-size: 20px;
     }
 }

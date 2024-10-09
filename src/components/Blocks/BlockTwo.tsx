@@ -1,6 +1,6 @@
 import { Title, Text, Stack, List } from "@mantine/core"
 
-import styles from '../../styles/WhatWillItDo.module.css'
+import styles from '../../styles/BlockTwo.module.css'
 import '../../assets/Fonts/fonts.css'
 
 interface BlockTwoInterface {

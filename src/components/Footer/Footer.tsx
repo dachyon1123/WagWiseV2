@@ -10,8 +10,8 @@ export default function Footer() {
         <footer>
             <Flex className={styles.container}>
                 <Flex className={styles.leftContainer}>
-                    <Image className={styles.image} src={logo} h={32} w={32} />
-                    <Title order={4} style={{fontFamily: 'Tenor Sans, sans serif'}}>WagWise</Title>
+                    <Image className={styles.image} src={logo}/>
+                    <Title order={4} style={{fontFamily: 'Tenor Sans, sans serif'}} className={styles.title}>WagWise</Title>
                 </Flex>
                 
                 <Flex className={styles.rightContainer}>

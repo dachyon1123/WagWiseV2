@@ -1,5 +1,26 @@
 .container {
     margin-bottom: 8px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (min-width: 768px) {
+        width: 80%;
+    }
+}
+
+.arrow {
+    @media (min-width: 768px) {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+.title {
+    font-size: 16px;
+    margin-left: auto;
+    @media (min-width: 768px) {
+        font-size: 22px;
+    }
 }
 
 .button {
@@ -9,6 +30,26 @@
     height: 50px;
     width: 80%;
     border-radius: 0;
+
+    @media (min-width: 768px) {
+        height: 80px;
+        font-size: 20px;
+    }
+}
+
+.button span {
+    width: 100%;
+}
+
+.button span span {
+    width: 100%;
+}
+
+
+.buttonContainer {
+    @media (min-width: 768px) {
+
+    }
 }
 
 .collapse {
@@ -25,4 +66,12 @@
     padding: 10px 10px 10px 10px;
     font-size: 14px;
     text-align: center;
+
+    @media (min-width: 768px) {
+        font-size: 20px;
+    }
+
+    @media (min-width: 1280px) {
+        padding: 30px;
+    }
 }

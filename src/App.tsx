@@ -8,7 +8,7 @@ import './assets/Fonts/fonts.css'
 
 import Homepage from './pages/HomePage';
 import BoardAndTrain from './pages/BoardAndTrain';
-import DogTraining from './pages/DogTraining';
+import PrivateTraining from './pages/PrivateTraining';
 import Faq from './pages/Faq';
 import OvernightBoarding from './pages/OvernightBoarding';
 import ContactMe from './pages/ContactMe';
@@ -47,7 +47,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Homepage />} />
           <Route path='/board-&-train' element={<BoardAndTrain />} />
-          <Route path='/training' element={<DogTraining />} />
+          <Route path='/private-training' element={<PrivateTraining />} />
           <Route path='/faq' element={<Faq />} />
           <Route path='/overnight-boarding' element={<OvernightBoarding />} />
           <Route path='/contact-me' element={<ContactMe />} />

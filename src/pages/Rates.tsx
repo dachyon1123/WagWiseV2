@@ -14,7 +14,7 @@ const ratesObj = {
 
 export default function RatesPage() {
     return (
-        <Stack style={{justifyContent: 'space-between', height: '100vh'}}>
+        <Stack gap={0}>
             <Header />
             <Banner title={ratesObj.title} text={ratesObj.text} image={ratesImage} buttonText="Contact Me"/>
             <RatesTable />

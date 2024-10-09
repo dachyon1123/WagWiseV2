@@ -21,7 +21,7 @@ export default function Navbar() {
                         <Title order={4} ta='right'>Home</Title>
                     </Link>
 
-                    <Link to='/training' style={{textDecoration: 'none', color: 'black'}}>
+                    <Link to='/private-training' style={{textDecoration: 'none', color: 'black'}}>
                         <Title order={4} ta='right'>Private Training</Title>
                     </Link>
 

@@ -13,13 +13,13 @@ export default function ContactMe() {
         <Stack gap={0} className={styles.container}>
             <Header />
             <Stack style={{ justifyContent: 'center', alignItems: 'center', padding: '30px' }}>
-                <Text ta='center' style={{fontFamily: 'Open Sans Semi-Bold, sans serif'}} fz={16}>
+                <Text className={styles.textSmall} style={{fontFamily: 'Open Sans Semi-Bold, sans serif'}} >
                     Call or email me with any questions or concerns
                 </Text>
-                <Text style={{fontFamily: 'Open Sans Semi-Bold, sans serif'}} fz={20}>
+                <Text className={styles.text} style={{fontFamily: 'Open Sans Semi-Bold, sans serif'}}>
                     512-835-3634
                 </Text>
-                <Text style={{fontFamily: 'Open Sans Semi-Bold, sans serif'}} fz={20}>
+                <Text className={styles.text} style={{fontFamily: 'Open Sans Semi-Bold, sans serif'}}>
                     wagwiseaustin@gmail.com
                 </Text>
             </Stack>

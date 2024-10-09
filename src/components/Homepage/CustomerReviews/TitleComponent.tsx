@@ -10,6 +10,6 @@ interface titleInterface {
 
 export default function TitleComponent({ title }: titleInterface) {
     return (
-        <Title order={1} ta="center" mt={75} style={{fontFamily: 'Tenor Sans, sans serif'}} className={styles.titleComponent}>{title}</Title>
+        <Title order={1} ta="center" style={{fontFamily: 'Tenor Sans, sans serif'}} className={styles.titleComponent}>{title}</Title>
     )
 }

@@ -10,9 +10,8 @@ interface reviewInterface {
 
 export default function CustomerReviews({ reviewer, reviewText }: reviewInterface) {
     return (
-        <section>
             <Stack className={styles.container}>
-                <Paper>
+                <Paper className={styles.paper}>
                     <Text className={styles.text} >
                         <Image src={quotes} w={64} h={64} />
                         {reviewText}
@@ -20,6 +19,5 @@ export default function CustomerReviews({ reviewer, reviewText }: reviewInterfac
                     <Title className={styles.title} order={4}>{reviewer}</Title>
                 </Paper>
             </Stack>
-        </section>
     )
 }

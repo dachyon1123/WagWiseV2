@@ -1,3 +1,4 @@
+import { Box } from "@mantine/core"
 import Header from "../components/Header/Header"
 import Banner from "../components/Homepage/Banner"
 import BlockOne from "../components/Blocks/BlockOne"
@@ -51,6 +52,7 @@ export default function BoardAndTrain() {
             <Banner title={boardAndTrainInfo.title} text={boardAndTrainInfo.text} image={bannerImage} buttonText={boardAndTrainInfo.buttonText}/>
             <BlockOne title={blockOne.title} text={blockOne.text} />
             <BlockTwo title={whatWillItDoObj.title} text={whatWillItDoObj.text} listItems={whatWillItDoListItems} />
+            <Box mt={30}></Box>
             <TitleComponent title="Stop and Prevent Your Dog's Nussiance Behaviors" />
             {dogBehaviorIssues.map((e) => {
                 return <StopBehaviors title={e.title} text={e.text} />

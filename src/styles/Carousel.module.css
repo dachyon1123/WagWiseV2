@@ -1,4 +1,6 @@
 .carousel {
+    min-height: 400px;
+
     @media (min-width: 1280px) {
         width: 80%;
         margin-left: auto;
@@ -13,7 +15,8 @@
     
 
     @media (min-width: 1900px) {
-        height: 607px;
+        min-height: 607px;
+        max-height: 607px;
         margin-top: 0;
     }
 }
@@ -30,8 +33,16 @@
 }
 
 .image {
+    min-height: 400px;
+    max-height: 400px;
+
     @media (min-width: 1280px) {
         height: 100%;
         width: 100%;
+    }
+
+    @media (min-width: 1900px) {
+        min-height: 607px;
+        max-height: 607px;
     }
 }

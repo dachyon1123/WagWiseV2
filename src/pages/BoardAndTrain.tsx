@@ -1,4 +1,6 @@
 import { Box } from "@mantine/core"
+import { useEffect } from "react"
+
 import Header from "../components/Header/Header"
 import Banner from "../components/Homepage/Banner"
 import BlockOne from "../components/Blocks/BlockOne"
@@ -12,7 +14,8 @@ import bannerImage from '../assets/pictures/boardAndTraing.webp'
 const boardAndTrainInfo = {
     title: 'Board and Train Obedience Training Program',
     text: 'I use positive reinforcement dog training methods to help your dog be the best he can be. With gentle and proven training techniques, I can stop and prevent behavior problems in your dog for good.',
-    buttonText: 'View Rates'
+    buttonText: 'View Rates',
+    buttonLink: '/rates'
 }
 
 const blockOne = {
@@ -34,8 +37,8 @@ const dogBehaviorIssues = [{
 }]
 
 const whatWillItDoObj = {
-    title: 'What Can Our Board and Train Program Do for You and Your Dog? ',
-    text: 'Our Board and Train Obedience Programs offer a highly effective solution to achieve all your dog training and puppy training objectives!'
+    title: 'What Can This Board and Train Program Do for You and Your Dog? ',
+    text: 'My Board and Train Obedience Programs offer a highly effective solution to achieve all your dog training and puppy training objectives!'
 }
 
 const whatWillItDoListItems = [
@@ -46,10 +49,19 @@ const whatWillItDoListItems = [
 ]
 
 export default function BoardAndTrain() {
+
+    useEffect(() => {
+        document.title = 'WagWise - Dog Overnight Board & Train';
+      }, []);
+
+      useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
     return (
         <>
             <Header />
-            <Banner title={boardAndTrainInfo.title} text={boardAndTrainInfo.text} image={bannerImage} buttonText={boardAndTrainInfo.buttonText}/>
+            <Banner title={boardAndTrainInfo.title} text={boardAndTrainInfo.text} image={bannerImage} buttonText={boardAndTrainInfo.buttonText} buttonLink={boardAndTrainInfo.buttonLink}/>
             <BlockOne title={blockOne.title} text={blockOne.text} />
             <BlockTwo title={whatWillItDoObj.title} text={whatWillItDoObj.text} listItems={whatWillItDoListItems} />
             <Box mt={30}></Box>

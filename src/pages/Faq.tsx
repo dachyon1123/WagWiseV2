@@ -1,3 +1,5 @@
+import { useEffect } from "react"
+
 import Header from "../components/Header/Header"
 import Banner from "../components/Homepage/Banner"
 import CollapseFaq from "../components/FAQ/CollapseFaq"
@@ -29,10 +31,19 @@ const questions = [
 ]
 
 export default function Faq() {
+
+    useEffect(() => {
+        document.title = 'WagWise - Frequently Asked Questions About Dog Training';
+    }, []);
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <>
             <Header />
-            <Banner title="FAQ" text='Frequently Asked Questions' image={bannerImage} buttonText="" />
+            <Banner title="FAQ" text='Frequently Asked Questions' image={bannerImage} buttonText="" buttonLink="" />
             <div style={{ marginBottom: 75 }}></div>
             {questions.map((q) => {
                 return <CollapseFaq title={q.title} text={q.text} />

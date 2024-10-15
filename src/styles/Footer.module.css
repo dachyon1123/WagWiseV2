@@ -34,13 +34,22 @@
 }
 
 .title {
+    text-decoration: none;
+    color: black;
+    
     @media (min-width: 768px) {
         font-size: 32px;
     }
 }
 
+.link {
+    text-decoration: none;
+}
+
 .text {
     font-size: 14px;
+    text-decoration: none;
+    color: black;
 
     @media (min-width: 768px) {
         font-size: 22px;

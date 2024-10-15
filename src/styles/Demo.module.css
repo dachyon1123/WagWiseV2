@@ -1,6 +1,7 @@
 .drawerHover {
   background-color: white;
   margin: 10px 10px 10px 0;
+  height: 50px;
   &:hover {
     background-color: rgb(201, 201, 201);
   }
@@ -10,5 +11,38 @@
   background-color: rgb(240, 123, 123);
   &:hover {
     background-color: rgb(177, 99, 99);
+  }
+}
+
+.title {
+  text-align: right;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+    padding-right: 4px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 24px;
+  }
+}
+
+
+.drawer {
+  width: 65%;
+
+  @media (min-width: 1280px) {
+    width: 40%;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+
+  &:hover {
+    color: rgb(98, 167, 245);
+    border-radius: 10px;
   }
 }

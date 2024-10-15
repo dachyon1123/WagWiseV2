@@ -22,7 +22,7 @@ export default function Services() {
                     </Text>
                 </Link>
 
-                <Link to='/training' className={styles.links}>
+                <Link to='/private-training' className={styles.links}>
                     <Image className={styles.images} src={privateTrainingImage} />
                     <Title className={styles.title} order={4}>
                         Private Sessions

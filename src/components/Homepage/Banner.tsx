@@ -1,4 +1,5 @@
-import { Box, Stack, Text, Title, Button, BackgroundImage } from "@mantine/core";
+import { Box, Stack, Text, Title, BackgroundImage } from "@mantine/core";
+import { Link } from "react-router-dom";
 
 import styles from '../../styles/Banner.module.css'
 import '../../assets/Fonts/fonts.css'
@@ -8,11 +9,11 @@ interface bannerContent {
     title: string,
     text: string,
     image: string;
-    buttonText: string
-
+    buttonText: string,
+    buttonLink: string,
 }
 
-export default function Banner({ title, text, image, buttonText }: bannerContent) {
+export default function Banner({ title, text, image, buttonText, buttonLink }: bannerContent) {
     return (
         <BackgroundImage src={image} className={styles.image}>
             <Box className={styles.bannerContainer}>
@@ -34,9 +35,9 @@ export default function Banner({ title, text, image, buttonText }: bannerContent
                     {/* Add functionality to pull up phone call on iphone when clicking this */}
                     {buttonText
                         ?
-                        <Button className={styles.contactButton}>
+                        <Link to={buttonLink} className={styles.contactButton}>
                             <Text size="md" className={styles.contactButtonText}>{buttonText}</Text>
-                        </Button>
+                        </Link>
                         :
                         <Stack h={100}>
 

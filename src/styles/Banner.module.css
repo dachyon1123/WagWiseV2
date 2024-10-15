@@ -77,6 +77,11 @@
     width: 50%;
     align-self: center;
     margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
 
     background-color: rgb(240, 123, 123);
 
@@ -98,8 +103,9 @@
 }
 
 .contactButtonText {
-    padding-left: 10px;
     font-size: 18px;
+    text-decoration: none;
+    color: white;
     @media (min-width: 768px) {
         font-size: 20px;
     }

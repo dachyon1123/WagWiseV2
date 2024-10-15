@@ -1,41 +1,43 @@
 .container {
-    padding: 40px;
+    align-items: center;
     height: 300px;
+    justify-content: center;
 
     @media (min-width: 768px) {
-        height: 450px;
-        margin-top: 85px;
+        height: 530px;
+        gap: 40px;
     }
 
     @media (min-width: 1900px) {
-        height: 600px;
+        margin-top: 0;
+        gap: 50px;
     }
 }
 
-.tableHeaderRow {
+.innerContainer {
+    width: 80%;
+    justify-content: space-between;
+    
+    @media (min-width: 1900px) {
+        width: 40%;
+        justify-content: space-between; 
+    }
+}
+
+.title {
     font-size: 20px;
 
     @media (min-width: 768px) {
         font-size: 30px;
     }
-
-    @media (min-width: 1900px) {
-        font-size: 36px;
-    }
 }
 
-.tableHeader {
-    text-align: center;
-}
-
-.tableBody {
-    text-align: center;
-
+.text {
+    font-size: 16px;
     @media (min-width: 768px) {
-        font-size: 20px;
+        font-size: 24pxs;
     }
-
     @media (min-width: 1900px) {
-        font-size: 25px;
+        font-size: 24px;
     }
 }

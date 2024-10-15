@@ -1,31 +1,25 @@
-import { Table } from "@mantine/core"
+import { Title, Text, Stack, Flex } from '@mantine/core';
 
 import styles from '../../styles/Rates.module.css'
 
 const rates = [
-    { service: 'Private Training', price: 12.011,},
-    { service: 'Board and Train', price: 14.007,},
-    { service: 'Overnight Boarding', price: 88.906,},
+    { service: 'Private Training', price: '$200/hr',},
+    { service: 'Board and Train', price: '$200/night',},
+    { service: 'Overnight Boarding', price: '$100/night',},
   ];
 
 export default function RatesTable() {
-    const table = rates.map((service) => (
-        <Table.Tr key={service.service}>
-            <Table.Td>{service.service}</Table.Td>
-            <Table.Td>{service.price}</Table.Td>
-        </Table.Tr>
-    ));
-
 
     return (
-        <Table className={styles.container}>
-            <Table.Thead>
-                <Table.Tr className={styles.tableHeaderRow}>
-                    <Table.Th className={styles.tableHeader}>Services</Table.Th>
-                    <Table.Th className={styles.tableHeader}>Prices</Table.Th>
-                </Table.Tr>
-            </Table.Thead>
-            <Table.Tbody className={styles.tableBody} style={{fontFamily: 'Open Sans Light, sans serif'}}>{table}</Table.Tbody>
-        </Table>
+        <Stack className={styles.container}>
+            {rates.map((e) => {
+                return (
+                <Flex className={styles.innerContainer}>
+                    <Title className={styles.title}>{e.service}</Title>
+                    <Text className={styles.text}>{e.price}</Text>
+                </Flex>
+                )
+            })}
+        </Stack>
     )
 }

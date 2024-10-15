@@ -1,4 +1,5 @@
 import { Stack, Title, Text, Divider, Button } from "@mantine/core"
+import { Link } from "react-router-dom"
 
 import styles from '../../styles/InfoBlocks.module.css'
 
@@ -7,9 +8,10 @@ interface InfoBlockInterface {
     title: string,
     text: string,
     buttonText: string,
+    buttonLink: string,
 }
 
-export default function InfoBlocks({ title, text, buttonText }: InfoBlockInterface) {
+export default function InfoBlocks({ title, text, buttonText, buttonLink }: InfoBlockInterface) {
     return (
         <section>
             <Stack className={styles.container}>
@@ -24,7 +26,7 @@ export default function InfoBlocks({ title, text, buttonText }: InfoBlockInterfa
 
                     {buttonText != '' 
                     ? 
-                    <Button className={styles.button}>{buttonText}</Button> 
+                    <Link to={buttonLink}><Button className={styles.button}>{buttonText}</Button> </Link>
                     :
                     <></>
                     }

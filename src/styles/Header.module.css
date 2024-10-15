@@ -2,3 +2,38 @@
     text-decoration: none;
     color: black;
 }
+
+.image {
+    position: absolute;
+    height: 100px;
+    width: auto;
+    top: 4px;
+    left: 4px;
+}
+
+.group1900 {
+    height: 120px;
+    position: relative;
+}
+
+.title1900 {
+    text-align: left;
+    font-size: 40px;
+}
+
+.titleLink {
+    text-decoration: none;
+    color: black;
+  }
+
+.box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navLinks {
+    width: 40%;
+    justify-content: space-evenly;
+    align-items: center;
+}
